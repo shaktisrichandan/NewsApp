@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  NewsApp
+
+  Created by Shakti Prakash  on 06/02/21.
+  
+*/
+
+"ok" = "OK";
+"try_again" = "Please try again after sometimes";
+"something_wrong" = "Something went wrong";
+"decoding_error" = "Decoding Error";
+"network_error" = "Network Error";
+"no_bookmark" = "No Bookmarked";
+"add_bookmark" = "Please add articles to bookmark to see here";

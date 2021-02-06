@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PopularNewsCollectionViewCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="117"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="117"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Commitment towards busi.." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNX-g7-vCh">
+                        <rect key="frame" x="124" y="4" width="224" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NDTV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ok-E4-Uwt">
+                        <rect key="frame" x="124" y="80" width="33" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="s2b-HG-Hzq">
+                        <rect key="frame" x="16" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="nfm-3G-ZgU"/>
+                            <constraint firstAttribute="width" constant="100" id="vfp-Ml-wyt"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ioj-ML-nn9">
+                        <rect key="frame" x="310" y="72" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="2lD-da-qL3"/>
+                            <constraint firstAttribute="width" constant="30" id="5af-Jr-GCw"/>
+                        </constraints>
+                        <state key="normal" image="Bookmark"/>
+                        <connections>
+                            <action selector="bookMarkTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="N4O-w3-SQ7"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The current COVID-19 crisis has presented enterprises across the …" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8og-UB-z6C">
+                        <rect key="frame" x="124" y="27.5" width="228" height="26.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="bNX-g7-vCh" firstAttribute="leading" secondItem="s2b-HG-Hzq" secondAttribute="trailing" constant="8" id="6Dw-CA-CGS"/>
+                <constraint firstAttribute="trailing" secondItem="Ioj-ML-nn9" secondAttribute="trailing" constant="16" id="AYr-jS-iMz"/>
+                <constraint firstItem="s2b-HG-Hzq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="ECa-g7-T7J"/>
+                <constraint firstAttribute="trailing" secondItem="8og-UB-z6C" secondAttribute="trailing" constant="4" id="FWz-kj-LdE"/>
+                <constraint firstItem="Ioj-ML-nn9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8og-UB-z6C" secondAttribute="bottom" constant="8" id="GHH-HL-bZX"/>
+                <constraint firstAttribute="trailing" secondItem="bNX-g7-vCh" secondAttribute="trailing" constant="8" id="V55-08-dJF"/>
+                <constraint firstAttribute="bottom" secondItem="Ioj-ML-nn9" secondAttribute="bottom" constant="15" id="a9M-oZ-R5K"/>
+                <constraint firstItem="6Ok-E4-Uwt" firstAttribute="centerY" secondItem="Ioj-ML-nn9" secondAttribute="centerY" id="dOS-ZQ-ce4"/>
+                <constraint firstItem="bNX-g7-vCh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="hAe-1R-10g"/>
+                <constraint firstItem="s2b-HG-Hzq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hru-bm-H49"/>
+                <constraint firstItem="8og-UB-z6C" firstAttribute="top" secondItem="bNX-g7-vCh" secondAttribute="bottom" constant="4" id="mwU-LI-2oJ"/>
+                <constraint firstItem="6Ok-E4-Uwt" firstAttribute="leading" secondItem="s2b-HG-Hzq" secondAttribute="trailing" constant="8" id="quy-7W-jvJ"/>
+                <constraint firstItem="8og-UB-z6C" firstAttribute="leading" secondItem="s2b-HG-Hzq" secondAttribute="trailing" constant="8" id="ycE-Ox-Sqf"/>
+            </constraints>
+            <size key="customSize" width="356" height="117"/>
+            <connections>
+                <outlet property="bookmarkButton" destination="Ioj-ML-nn9" id="ywx-pP-2hf"/>
+                <outlet property="descriptionLabel" destination="8og-UB-z6C" id="CtM-ZA-rtv"/>
+                <outlet property="headlineLabel" destination="bNX-g7-vCh" id="WY9-sM-Il8"/>
+                <outlet property="popularImageView" destination="s2b-HG-Hzq" id="rTk-a5-1Tt"/>
+                <outlet property="sourceLabel" destination="6Ok-E4-Uwt" id="fJ9-9d-u9Q"/>
+            </connections>
+            <point key="canvasLocation" x="352.17391304347831" y="74.665178571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Bookmark" width="17" height="22"/>
+        <image name="placeholder" width="348" height="261"/>
+    </resources>
+</document>

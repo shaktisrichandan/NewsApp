@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TopNewsCollectionViewCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="465" height="496"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="465" height="496"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top News" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6H-pZ-t4z">
+                        <rect key="frame" x="16" y="18" width="433" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="wVv-cP-xKb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="4YE-C7-Dtg">
+                        <rect key="frame" x="17" y="78" width="431" height="213"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="213" id="uBQ-DK-PQn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr9-S5-i25">
+                        <rect key="frame" x="16" y="421.5" width="433" height="19"/>
+                        <string key="text">Since the Pune police’s crackdown on Maoist organizations and naxal supporters, a lot is being discussed about the action taken against Naxalites during the UPA regime.Today, Chidambaram…</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NDTV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hR4-rD-dyl">
+                        <rect key="frame" x="15" y="456.5" width="43" height="19.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdA-zC-u91">
+                        <rect key="frame" x="414" y="449" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="Jki-0c-D1k"/>
+                            <constraint firstAttribute="height" constant="35" id="o0F-fE-cb8"/>
+                        </constraints>
+                        <state key="normal" image="Bookmark"/>
+                        <connections>
+                            <action selector="bookMarkTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Qoe-Ad-Rlp"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeD-sl-ugC">
+                        <rect key="frame" x="16" y="310" width="433" height="107.5"/>
+                        <string key="text">In 2011, were Maharashtra Andhashraddha Nirmoolan Samiti workers really arrested for Naxal links?In 2011, were Maharashtra Andhashraddha Nirmoolan Samiti workers really arrested for Naxal links?</string>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QdA-zC-u91" secondAttribute="bottom" constant="12" id="1BR-X1-uDx"/>
+                <constraint firstAttribute="bottom" secondItem="hR4-rD-dyl" secondAttribute="bottom" constant="20" id="BPa-8H-Gix"/>
+                <constraint firstItem="4YE-C7-Dtg" firstAttribute="top" secondItem="X6H-pZ-t4z" secondAttribute="bottom" constant="15" id="ERZ-Li-Zhg"/>
+                <constraint firstItem="X6H-pZ-t4z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="18" id="Fhh-GQ-3zC"/>
+                <constraint firstAttribute="trailing" secondItem="X6H-pZ-t4z" secondAttribute="trailing" constant="16" id="Sue-c4-ID5"/>
+                <constraint firstAttribute="trailing" secondItem="4YE-C7-Dtg" secondAttribute="trailing" constant="17" id="Usk-mW-XsN"/>
+                <constraint firstItem="hR4-rD-dyl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="Uyt-S0-F0e"/>
+                <constraint firstItem="4YE-C7-Dtg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="17" id="WFz-Gn-ahY"/>
+                <constraint firstItem="hR4-rD-dyl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Rr9-S5-i25" secondAttribute="bottom" constant="16" id="bwq-Wo-zrL"/>
+                <constraint firstItem="X6H-pZ-t4z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="cOk-L4-ywo"/>
+                <constraint firstItem="jeD-sl-ugC" firstAttribute="top" secondItem="4YE-C7-Dtg" secondAttribute="bottom" constant="19" id="d5u-lX-vlO"/>
+                <constraint firstItem="jeD-sl-ugC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="esp-Jf-tbG"/>
+                <constraint firstItem="Rr9-S5-i25" firstAttribute="top" secondItem="jeD-sl-ugC" secondAttribute="bottom" constant="4" id="gUZ-J4-pQ2"/>
+                <constraint firstAttribute="trailing" secondItem="Rr9-S5-i25" secondAttribute="trailing" constant="16" id="h56-Cf-xIv"/>
+                <constraint firstItem="Rr9-S5-i25" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="ktm-pl-64i"/>
+                <constraint firstAttribute="trailing" secondItem="QdA-zC-u91" secondAttribute="trailing" constant="16" id="ldQ-4L-Tfq"/>
+                <constraint firstAttribute="trailing" secondItem="jeD-sl-ugC" secondAttribute="trailing" constant="16" id="pc4-mr-u85"/>
+            </constraints>
+            <size key="customSize" width="465" height="496"/>
+            <connections>
+                <outlet property="bookMarkButton" destination="QdA-zC-u91" id="yh4-iw-FFB"/>
+                <outlet property="descriptionLabel" destination="Rr9-S5-i25" id="LpU-RW-D5o"/>
+                <outlet property="imageHeightConstraint" destination="uBQ-DK-PQn" id="Tjj-ra-XJv"/>
+                <outlet property="sourcelabel" destination="hR4-rD-dyl" id="2ac-ai-alZ"/>
+                <outlet property="titleLabel" destination="jeD-sl-ugC" id="l0R-YC-bGO"/>
+                <outlet property="topImageView" destination="4YE-C7-Dtg" id="LrN-LE-s18"/>
+            </connections>
+            <point key="canvasLocation" x="-90.579710144927546" y="137.94642857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Bookmark" width="17" height="22"/>
+        <image name="placeholder" width="348" height="261"/>
+    </resources>
+</document>
