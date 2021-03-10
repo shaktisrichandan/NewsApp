@@ -53,6 +53,7 @@
 		A517867C25CEB2C300A4CB81 /* BookmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewModel.swift; sourceTree = "<group>"; };
 		A517867F25CEBFBA00A4CB81 /* BottomBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		A517868025CEBFBA00A4CB81 /* BottomBannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomBannerCollectionViewCell.xib; sourceTree = "<group>"; };
+		A51B357E25F8C60300D4E8C4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5BD8D3C25CE4933005324D4 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BD8D3F25CE4933005324D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5BD8D4125CE4933005324D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		A5BD8D4925CE4933005324D4 /* NewsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsApp.xcdatamodel; sourceTree = "<group>"; };
 		A5BD8D4B25CE4934005324D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5BD8D4E25CE4934005324D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A5BD8D5025CE4934005324D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5BD8D6225CE4B38005324D4 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		A5BD8D6725CE4B8C005324D4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A5BD8D6E25CE4CDC005324D4 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
@@ -105,14 +105,6 @@
 			path = BookmarkManager;
 			sourceTree = "<group>";
 		};
-		A51B356C25F8C00100D4E8C4 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				A5BD8D5025CE4934005324D4 /* Info.plist */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
 		A5BD8D3325CE4933005324D4 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +124,6 @@
 		A5BD8D3E25CE4933005324D4 /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
-				A51B356C25F8C00100D4E8C4 /* Resource */,
 				A5BD8D5E25CE4A80005324D4 /* Common */,
 				A5BD8D5D25CE4A6A005324D4 /* Controller */,
 				A5BD8D5C25CE4A55005324D4 /* Model */,
@@ -201,6 +192,7 @@
 		A5BD8D5F25CE4A96005324D4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A51B357E25F8C60300D4E8C4 /* Info.plist */,
 				A5BD8D4B25CE4934005324D4 /* Assets.xcassets */,
 				A5BD8D4825CE4933005324D4 /* NewsApp.xcdatamodeld */,
 				A5BD8D9125CE5D03005324D4 /* Localizable.strings */,
@@ -571,7 +563,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NewsApp/Resource/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/NewsApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -589,7 +582,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NewsApp/Resource/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/NewsApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
